@@ -31,7 +31,12 @@ Load this repository in the www subdirectory "/PHP-EShop-Server".
 
 ### Establish the connection in WinOrder
 
+Activate the local webserver for testing:
+![webserver](https://user-images.githubusercontent.com/11274319/180400328-3eb3c351-92e0-44fe-b10c-b55bb4b65ef2.PNG)
+
 Add a new online store in WinOrder, set the transfer type to "WinOrder (REST)" and the web service URL to the local web server:
+
+![webserver](https://user-images.githubusercontent.com/11274319/180403368-2983e513-b7dd-4dff-a020-5e7c1f5d616b.PNG)
 
 Call "http://<local webserver>/PHP-EShop-Server/TestOrder" in the web browser. The call generates a test order and outputs the sample order in JSON format in the web browser.
 The order is saved as an "order_xx.json" file in the same directory. The script "TestOrder.php" shows how to create an order in JSON format in PHP.
@@ -40,8 +45,12 @@ WinOrder calls the URL endpoint /GetNewOrders in the specified interval. The scr
 WinOrder reads the JSON orders and reports successful receipt back to the /SendTrackingStatus URL endpoint. The SendTrackingStatus.php script evaluates the status
 and looks for the corresponding file and deletes it so that the same order is not transmitted multiple times.
 Your server will keep the order in a database and set the status to "received/processed".
+The example order will received in WinOrder:
+
+![order](https://user-images.githubusercontent.com/11274319/180404464-e10d754a-4fb6-4794-a61a-5cdd0821d4b1.PNG)
+
 
 For further questions we are at your disposal! Write us an EMail to support@winorder.de, we will help you with the integration!
 
 WinOrder Development Team
-http://www.winorder.com
+https://www.winorder.com
