@@ -1,4 +1,4 @@
-# PHP-EShop-Server
+# PHP-EShop-Server example
 WinOrder online-shop interface (EShop) server example for WinOrder POS written in PHP.
 
 You have an online-shop and want to transfer your orders to the WinOrder POS automatically, then you are in the right place!
