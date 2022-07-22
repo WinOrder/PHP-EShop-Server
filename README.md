@@ -1,7 +1,9 @@
 # PHP-EShop-Server
-WinOrder online-shop interface (EShop) server example for WinOrder POS written in PHP
+WinOrder online-shop interface (EShop) server example for WinOrder POS written in PHP.
 
 You have an online-shop and want to transfer your orders to the WinOrder POS automatically, then you are in the right place!
+
+The interface documentation (german only) [PDF is here](https://www.winorder.com/download/WinOrder-EShop-Spezifikation.pdf).
 
 This is a very simple example for a server-side implementation of the WinOrder EShop interface in PHP.
 We don't use a database here, the pending orders are stored as a file on the server.
@@ -22,10 +24,10 @@ In the example, the file of the current online order is deleted.
 In the real use case, you would set the status of the order in your database to "successfully received".
 
 ### Testing with WinOrder
-You can test the retrieval with a local WinOrder installation:
+You can test the retrieval with a local [WinOrder installation](https://www.winorder.com/herunterladen/testversion/):
 WinOrder has an integrated WebServer built in, activate it in program settings/Online-Shop/Webserver and set a valid local hostname/IP.
-The WWW root is located in the directory "C:\ProgramData\PixelPlanet\WinOrder7\wwwroot".
-Load this repository in the subdirectory in the subdirectory "/PHP-EShop-Server".
+The WWW root is located in the directory "[C:\ProgramData\PixelPlanet\WinOrder7\wwwroot](C:%5CProgramData%5CPixelPlanet%5CWinOrder7%5Cwwwroot)".
+Load this repository in the www subdirectory "/PHP-EShop-Server".
 
 ### Establish the connection in WinOrder
 
@@ -42,3 +44,4 @@ Your server will keep the order in a database and set the status to "received/pr
 For further questions we are at your disposal! Write us an EMail to support@winorder.de, we will help you with the integration!
 
 WinOrder Development Team
+http://www.winorder.com
