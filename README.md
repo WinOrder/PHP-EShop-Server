@@ -36,7 +36,7 @@ Activate the local webserver for testing:
 
 Add a new online store in WinOrder, set the transfer type to "WinOrder (REST)" and the web service URL to the local web server:
 
-![webserver](https://user-images.githubusercontent.com/11274319/180403368-2983e513-b7dd-4dff-a020-5e7c1f5d616b.PNG)
+![ShopSettings](https://user-images.githubusercontent.com/11274319/180432720-d11a0834-d2e2-4588-86c0-0af34597b72b.PNG)
 
 Call "http://<local webserver>/PHP-EShop-Server/TestOrder" in the web browser. The call generates a test order and outputs the sample order in JSON format in the web browser.
 The order is saved as an "order_xx.json" file in the same directory. The script "TestOrder.php" shows how to create an order in JSON format in PHP.
