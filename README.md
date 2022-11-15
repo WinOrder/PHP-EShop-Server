@@ -23,13 +23,12 @@ After WinOrder has successfully received the JSON data it sends a feedback to yo
 In the example, the file of the current online order is deleted. 
 In the real use case, you would set the status of the order in your database to "successfully received".
 
-## PreparationTime.php
+## Optional: PreparationTime.php
 WinOrder has a slider for current restaurant's preparation time. 
 The current preparation time is the time required by the restaurant to take the order until it is ready for delivery.
 The restaurant owner can set this time with a slider. WinOrder PUT's the current preparation time back to your server to the endpoint /PreparationTime.
-In this example the PUT requests is simply saved to file. "preparation.json" cantains the payload of the PUT request.
-
-
+In this example the PUT requests is simply saved to file. "preparation.txt" contains the payload of the PUT request.
+This endpoint is optional and not needed for order processing.
 
 ### Testing with WinOrder
 You can test the retrieval with a local [WinOrder installation](https://www.winorder.com/herunterladen/testversion/):
