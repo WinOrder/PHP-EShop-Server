@@ -4,7 +4,7 @@
 	$putdata = fopen("php://input", "r");
 
 	/* Open a file for writing */
-	$fp = fopen("preparationtime.json", "w");
+	$fp = fopen("preparationtime.txt", "w");
 
 	/* Read the data 1 KB at a time and write to the file */
 	while ($data = fread($putdata, 1024))
