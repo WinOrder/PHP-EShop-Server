@@ -15,7 +15,7 @@ The script shows how to create the syntactically correct JSON format for WinOrde
 ## GetNewOrders.php
 WinOrder POS calls the /GetNewOrders endpoint to retrieve new online orders.
 The example script returns all previously created test orders as JSON. For simplicity, all orders are stored as "order_xxx.json" in the same directory.
-In real world use you probably use a database.
+In real world you probably use a database.
 
 ## SendTrackingStatus.php
 After WinOrder has successfully received the JSON data it sends a feedback to your server. This script handles the
